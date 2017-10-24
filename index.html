@@ -108,11 +108,13 @@
 
 	<script>
 		
-		var $burguerButton = document.getElementById('burguer_button');
+		var $burguerButton = document.getElementById('burguer-button');
 		var $menu = document.getElementById('menu');
 		
 		$burguerButton.addEventListener('touchstart' , function(){
 			$menu.classList.toggle('active');
+
+			// console.log($menu);
 		});
 
 	</script>
