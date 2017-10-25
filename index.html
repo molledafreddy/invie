@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/invie.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 	<!-- <link rel="stylesheet" type="text/css" media="(max-width: 800px)" href="css/media-querie.css"> -->
 </head>
 <body>
@@ -111,11 +111,15 @@
 		var $burguerButton = document.getElementById('burguer-button');
 		var $menu = document.getElementById('menu');
 		
-		$burguerButton.addEventListener('touchstart' , function(){
+		$burguerButton.addEventListener('touchstart' , toggleMenu);
+
+
+
+			function toggleMenu(){
 			$menu.classList.toggle('active');
 
 			// console.log($menu);
-		});
+		};
 
 	</script>
 </body>
